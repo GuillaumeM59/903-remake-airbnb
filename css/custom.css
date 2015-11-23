@@ -196,15 +196,16 @@ video.fillWidth {
 .column:last-child:not(:first-child), .columns:last-child:not(:first-child) {
 	float: center;
 }
-
+select{margin-bottom: 0;}
 #search-home {
 	position: relative;
-	bottom: -160px;
+	bottom: 80px;
 	background-color: rgba(0, 0, 0, 0.5);
 	vertical-align: bottom;
 	margin-right: 0px;
 	padding-top: 1.429em;
 	padding-bottom: 1.429em;
+	max-width: none;
 }
 #search-homesm {
 position: absolute;
