@@ -18,6 +18,8 @@ jQuery(function($){
   );
 });
 
+var elem = new Foundation.OffCanvas(element);
+
 (document).foundation({
 equalizer : {
 // Specify if Equalizer should make elements equal height once they become stacked.

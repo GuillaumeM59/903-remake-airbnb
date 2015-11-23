@@ -9,7 +9,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title></title>
+  <title>Locations saisonnières, maisons, appartements et chambres d'hôtes à louer - Airbnb</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -33,8 +33,10 @@
         <![endif]-->
 
   <!-- small devices offcanvas -->
-
-  <div class="off-canvas-wrap ">
+  <div id="blank" class="hide-for-medium">
+    <!-- FOR MOVING DOWN PICTURE -->
+  </div>
+  <div class="off-canvas-wrapper ">
     <div class="off-canvas-wrap-inner" data-off-canvas-wrapper id="offcan">
       <nav class="title-bar hide-for-medium">
         <div class="title-bar-left">
@@ -45,6 +47,19 @@
         </div>
       </nav>
 
+    <aside class="off-canvas position-left" id="offCanvas" data-off-canvas >
+      <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+      </ul>
+
+    </aside>
       <div class="header-unit">
         <div id="video-container">
           <video autoplay loop class="fillWidth">
@@ -76,14 +91,25 @@
               <h2 class="text-center">Bienvenue à la maison</h2>
               <p class="text-center">Louez des logements uniques auprès d'hôtes locaux dans plus de 190 pays</p>
               <p class="text-center">
-                <a href="http://epickwebdesign.com" class="medium button">Mode d'emploi</a>
+                <a href="http://epickwebdesign.com" class="medium button hide-for-medium">Mode d'emploi</a>
               </p>
+              <div class=" column hide-for-medium" id="search-homesm">
+                <div class="small-12 ">
+
+                  <div class="row collapse">
+                    <div class="small-10 columns">
+                      <input class="input-group-field" type="search" placeholder="Où voulez-vous aller?" />
+                    </div>
+                    <div class="small-1 end columns"><a id="submit" class="input-group-button button"><i class="fa fa-search"></i></a></div>
+                  </div>
+                </div>
+              </div>
             </div>
           </header>
           <!-- END WELCOME TEXT CENTER HOME -->
 
 
-          <div class=" column" id="search-home">
+          <div class=" column show-for-medium" id="search-home">
             <div class="small-11 medium-11 large-11 columns small-centered medium-centered large-centered">
 
               <div class="row collapse">
@@ -128,57 +154,38 @@
     <!-- END HOME CONTENT -->
 
 
-    <aside class="off-canvas position-left" id="offCanvasLeft" data-off-canvas data-position="left">
-      <ul>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-        <li>4</li>
-        <li>5</li>
-        <li>6</li>
-        <li>7</li>
-        <li>8</li>
-      </ul>
-
-    </aside>
     <div class="off-canvas-content" data-off-canvas-content></div>
   </div>
   <!-- end smalldevice navbar-->
 
 
   <section id="begin-hostsm" class="row collapse hide-for-medium">
-
+<!-- SMALL DEVICE BLOCK -->
     <div id="lefthostsm" class="small-12 columns">
-
       <h4>Ouvrez la porte à un voyageur et à une nouvelle vie</h4>
       <p>Gagnez de l'argent en accueillant des voyageurs</p>
-      <a href="#" class=" expanded button" id="estimate">Estimez mes revenus</a>
+      <a href="#" class=" expanded button estimate">Estimez mes revenus</a>
     </div>
-
-
   </section>
+
 
   <section id="begin-host" class="row collapse show-for-medium">
-
     <div id="lefthost" class="large-3 large-offset-2 medium-4 medium-offset-1  small-12 columns">
-
       <h4>Ouvrez la porte à un voyageur et à une nouvelle vie</h4>
       <p>Gagnez de l'argent en accueillant des voyageurs</p>
-      <a href="#" class="small expanded button" id="estimate">Estimez mes revenus</a>
+      <a href="#" class="small expanded button estimate">Estimez mes revenus</a>
     </div>
-
 
     <div id="imghost" class="large-5 medium-6 small-12 end columns">
-
       <img src="img/host/host1.jpg" alt="picture of hosts" />
     </div>
+  </section><!-- END HOST BLOCK -->
 
-  </section>
 
-<!--               AROUND GRID                            -->
+
+  <!--               AROUND GRID                            -->
 
   <section id="around" class="row">
-
 
     <div class="row ">
       <div class="small-12 large-12 columns">
@@ -188,141 +195,150 @@
         </div>
       </div>
       <div class=" city small-12 medium-12 large-4 columns">
-        <div id="lille" class="column" >
+        <div id="lille" class="column">
           <h3 class="text-center">Lille</h3>
         </div>
       </div>
-
-        <div class="city small-12 medium-6 large-4 columns">
-          <div id="bruxelles" class="column">
-
+      <div class="city small-12 medium-6 large-4 columns">
+        <div id="bruxelles" class="column">
           <h3 class="text-center">Bruxelles</h3>
-          </div>
-        </div>
-        <div class="city small-12 medium-6 large-4 columns">
-          <div id="londres" class="column">
-
-          <h3 class="text-center">Londres</h3>
-          </div>
-        </div>
-        <div class="small-12 large-12 columns">
-          <a href="#" class=" expanded button" id="otheraround">Voir toutes les destinations</a>
         </div>
       </div>
+      <div class="city small-12 medium-6 large-4 columns">
+        <div id="londres" class="column">
+          <h3 class="text-center">Londres</h3>
+        </div>
+      </div>
+      <div class="small-12 large-12 columns">
+        <a href="#" class=" expanded button" id="otheraround">Voir toutes les destinations</a>
+      </div>
     </div>
-  </section>
+  </section>  <!--  END AROUND -->
+
+
 
   <footer>
-      <div class="row">
-        <div id="options" class="medium-3 medium-offset-2 small-3 columns">
-          <select class="langages selectfooter" name="langages">
-            <option value="fr">Français</option>
-            <option value="en">Anglais</option>
-            <option value="sp">Espagnol</option>
-            <option value="it">Italien</option>
-          </select>
-          <select class="devices selectfooter" name="devices">
-            <option value="eu">Euro</option>
-            <option value="usd">Dollard</option>
-            <option value="gbp">Pound</option>
-          </select>
-        </div>
-  			<div id="societe" class="medium-2 small-3 columns">
-  				<h6>Société</h6>
-  				<ul>
-  					<li><a href="#">À propos</a></li>
-  					<li><a href="#">Carrières</a></li>
-  					<li><a href="#">Presse</a></li>
-  					<li><a href="#">Blog</a></li>
-  					<li><a href="#">Aide</a></li>
-  					<li><a href="#">Règles</a></li>
-  					<li><a href="#">Réponse aux catastrophes</a></li>
-  					<li><a href="#">Conditions générales et confidentialité</a></li>
-  				</ul>
-  			</div>
-  			<div id="decouvrir" class="medium-2 small-3 columns show-for-medium">
-  				<h6>Découvrir</h6>
-  				<ul>
-  					<li><a href="#">Confiance et sécurité</a></li>
-  					<li><a href="#">Inviter des amis</a></li>
-  					<li><a href="#">La sélection Airbnb</a></li>
-  					<li><a href="#">Application mobile</a></li>
-  					<li><a href="#">Soutenir New York</a></li>
-  					<li><a href="#">Voyage d'affaires</a></li>
-  					<li><a href="#">Plan du site</a></li>
-  				</ul>
-  			</div>
-  			<div id="hebergement" class="medium-2 small-3 columns columns show-for-medium end">
-  				<h6>Hébergement</h6>
-  				<ul>
-  					<li><a href="#">Pourquoi être hôte</a></li>
-  					<li><a href="#">Hospitalité</a></li>
-  					<li><a href="#">Hébergement responsable</a></li>
-  					<li><a href="#">Sécurité à la maison</a></li>
-  				</ul>
-  			</div>
-  		</div>
-  			<div class="row">
-  				<div class="medium-8 medium-offset-2 columns">
-  					<hr>
-  				</div>
-  			</div>
-  			<div class="row">
-  			<div id="copyright" class="column text-center">
-  					<h6>Rejoignez-nous sur</h6>
-        		<a href="#"><i class="fa fa-youtube fa-2x"></i></a>
-        		<a href="#"><i class="fa fa-facebook fa-2x fafb"></i></a>
-        		<a href="#"><i class="fa fa-twitter fa-2x"></i></a>
-        		<a href="#"><i class="fa fa-instagram fa-2x"></i></a>
-  					<p>© Airbnb, Inc.</p>
-  				</div>
-  			</div>
-  		</footer>
+    <div class="row">
+      <div id="options" class="medium-3 medium-offset-2 small-3 columns">
+        <select class="langages selectfooter" name="langages">
+          <option value="fr">Français</option>
+          <option value="en">Anglais</option>
+          <option value="sp">Espagnol</option>
+          <option value="it">Italien</option>
+        </select>
+        <select class="devices selectfooter" name="devices">
+          <option value="eu">Euro</option>
+          <option value="usd">Dollard</option>
+          <option value="gbp">Pound</option>
+        </select>
+      </div>
+      <div id="societe" class="medium-2 small-3 columns">
+        <h6>Société</h6>
+        <ul>
+          <li><a href="#">À propos</a></li>
+          <li><a href="#">Carrières</a></li>
+          <li><a href="#">Presse</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Aide</a></li>
+          <li><a href="#">Règles</a></li>
+          <li><a href="#">Réponse aux catastrophes</a></li>
+          <li><a href="#">Conditions générales et confidentialité</a></li>
+        </ul>
+      </div>
+      <div id="decouvrir" class="medium-2 small-3 columns show-for-medium">
+        <h6>Découvrir</h6>
+        <ul>
+          <li><a href="#">Confiance et sécurité</a></li>
+          <li><a href="#">Inviter des amis</a></li>
+          <li><a href="#">La sélection Airbnb</a></li>
+          <li><a href="#">Application mobile</a></li>
+          <li><a href="#">Soutenir New York</a></li>
+          <li><a href="#">Voyage d'affaires</a></li>
+          <li><a href="#">Plan du site</a></li>
+        </ul>
+      </div>
+      <div id="hebergement" class="medium-2 small-3 columns columns show-for-medium end">
+        <h6>Hébergement</h6>
+        <ul>
+          <li><a href="#">Pourquoi être hôte</a></li>
+          <li><a href="#">Hospitalité</a></li>
+          <li><a href="#">Hébergement responsable</a></li>
+          <li><a href="#">Sécurité à la maison</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="medium-8 medium-offset-2 columns">
+        <hr>
+      </div>
+    </div>
+    <div class="row">
+      <div id="copyright" class="column text-center">
+        <h6>Rejoignez-nous sur</h6>
+        <a href="#"><i class="fa fa-youtube fa-2x"></i></a>
+        <a href="#"><i class="fa fa-facebook fa-2x fafb"></i></a>
+        <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+        <a href="#"><i class="fa fa-instagram fa-2x"></i></a>
+        <p>© Airbnb, Inc.</p>
+      </div>
+    </div>
+  </footer>
+
+
+<!--    JS SCRIPTS AND LIBRAIRIES     -->
+
+
+  <script>
+    window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
+  </script>
+
+  <script>
+    $(document).foundation();
+  </script>
+
+  <script>
+    $(function() {
+      $('a[href*=#]:not([href=#])').click(function() {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+          if (target.length) {
+            $('html,body').animate({
+              scrollTop: target.offset().top
+            }, 1000);
+            return false;
+          }
+        }
+      });
+    });
+  </script>
+  <script src="js/vendor/jquery.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+  <script src="js/foundation.min.js"></script>
+  <script src="js/main.js"></script>
 
 
 
 
 
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+  <script>
+    (function(b, o, i, l, e, r) {
+      b.GoogleAnalyticsObject = l;
+      b[l] || (b[l] =
+        function() {
+          (b[l].q = b[l].q || []).push(arguments)
+        });
+      b[l].l = +new Date;
+      e = o.createElement(i);
+      r = o.getElementsByTagName(i)[0];
+      e.src = '//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e, r)
+    }(window, document, 'script', 'ga'));
+    ga('create', 'UA-XXXXX-X', 'auto');
+    ga('send', 'pageview');
+  </script>
+</body>
 
-        <script>
-            $(document).foundation();
-        </script>
-
-        <script>
-            $(function() {
-                $('a[href*=#]:not([href=#])').click(function() {
-                    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-                        var target = $(this.hash);
-                        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                        if (target.length) {
-                            $('html,body').animate({
-                                scrollTop: target.offset().top
-                            }, 1000);
-                            return false;
-                        }
-                    }
-                });
-            });
-        </script>
-        <script src="js/vendor/jquery.min.js"></script>
-        <script src="js/jquery-ui.js"></script>
-        <script src="js/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-        <script src="js/foundation.min.js"></script>
-        <script src="js/main.js"></script>
-
-
-
-
-
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-        </script>
-    </body>
 </html>
