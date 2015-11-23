@@ -283,8 +283,34 @@ padding-left: 5px;padding-top: 25px; padding-right:5px; }
 
 /*-------------AROUND BLOCK------------*/
 
-#lille{ background-image: url("../img/around/lille.jpeg") }
-#bruxelles { background-image: url("../img/around/bruxelles.jpeg")}
-#londres { background-image: url("../img/around/londres.jpeg")}
+#lille{ background-image: url("../img/around/lille.jpeg"); margin:5px;}
+#bruxelles { background-image: url("../img/around/bruxelles.jpeg");margin:5px;}
+#londres { background-image: url("../img/around/londres.jpeg");margin:5px;}
 #around #otheraround { color: #565A5C;background-color: white;font-weight: bold; border: 1px solid rgb(143, 143, 143); margin-top: 50px;margin-bottom: 50px;}
 #around #otheraround:hover {border: 1px solid black;}
+
+
+/*-------------FOOTER BLOCK---------------*/
+footer {
+	background-image: url("https://a1.muscache.com/airbnb/static/footer/background-7c73b7858fe7c4bc03505fc1f7f672fd.png");
+	background-color: #2B2D2E;
+	color: #FFF;
+	margin-top: 50px;
+	font-weight: bold;
+}
+footer h6 {
+	font-weight: bold;
+}
+footer a {color: white;}
+footer i {
+	color: white;
+	border: 1px solid rgb(158, 158, 158);
+	border-radius: 30px;
+	padding:3px;
+	margin: 0 3px;
+}
+.fafb {padding: 3px 8px;}
+footer p { color: rgb(116, 116, 116);}
+.selectfooter {
+	background-color: rgb(64, 64, 64);
+	color: white; }
