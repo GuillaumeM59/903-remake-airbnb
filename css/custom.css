@@ -1,5 +1,19 @@
 /*----------TEMPLATE PAGE SRTUCTURE----------*/
+body {
+	font-family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 14px;
+	line-height: 1.43;
+	color: #565A5C;
+  background-color: #EDEFED;
+}
+h2{
+  font-size: 60px;
+}
 
+
+#conteneur-center {
+	  padding-top:20px;
+}
 .contain-to-grid, .top-bar {
   clear: both;
   background: none;
@@ -32,9 +46,7 @@
   height: 90px;
   visibility: hidden;
 }
-section {
-  padding-bottom: 150px;
-}
+
 #contact {
   background: #fff;
   padding-bottom: 30px;
@@ -64,8 +76,8 @@ ul, ol, dl {
 
   background-attachment: fixed;
 }
-#portfolio h2, h4 {
-  color: #fff;
+h4 {
+  color: #565A5C;
   text-align: center;
 }
 #portfolio h4 {
@@ -113,12 +125,16 @@ padding-bottom: 0;
 margin-bottom: 0;
 text-align: center;
 }
-h1 { }
+
 .title-bar {
   color: #FF5A5F;
 }
 /*---------------HOME-------------*/
 
+.header-unit {
+  height: 100%;
+  position: relative;
+}
 
 
 
@@ -127,47 +143,29 @@ h1 { }
 }
 
 
-
-
-/*----------------VIDEO-----------*/
-
-.header-unit {
-  height: 100%;
+#home-onvideo {
   position: relative;
-}
-#video-container {
-	position: absolute;
-	top:0%;
-	left:0%;
-	height:100%;
-	width:100%;
-	overflow: hidden;
-}
-video {
-	position:absolute;
-	z-index:0;
-}
-video.fillWidth {
-	width: 100%;
-  height: auto;
-}
-#home-menu {
-  position: relative;
+  	height: 600px;
   color: white;
 }
 
-#home-menu i {
+#home-onvideo i {
   font-size: 1.5em;
   font-weight: 600;
 }
-#home-menu a {
+#home-onvideo a {
   color: white;
   font-size: 1em;
   font-weight: 400;
 }
 
-#home-menu .top-bar {
+#home-onvideo .top-bar {
   padding:0;
+}
+.text-center-home {
+position: relative;
+padding-top: 150px;
+  max-width: none;
 }
 .text-center-home .button{
   background-color: rgba(252, 252, 252,0.4);
@@ -176,21 +174,60 @@ video.fillWidth {
   background-color: rgba(0, 0, 0,0.65);
 }
 
+
+/*----------------VIDEO-----------*/
+
+#video-container {
+	position: absolute;
+	top:0%;
+	left:0%;
+	height:600px;
+	width:100%;
+	overflow: hidden;
+}
+video {
+	position:absolute;
+	z-index:0;
+}
+video.fillWidth {
+	min-width: 100%;
+  min-height: 600px;
+}
+
 .column:last-child:not(:first-child), .columns:last-child:not(:first-child) {
 	float: center;
 }
 
 #search-home {
+position: absolute;
+bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
   vertical-align: middle;
   margin-right: 0;
   padding-top: 20px;
   padding-bottom: 20px;
 }
+
+.searchmar0{
+margin: 0;
+}
+
 #submit {
 height: 2.4375rem;
 padding: 0.5rem;
 	border-color: #FF5A5F #FF5A5F #E00007;
 	background-color: #FF5A5F;
 	color: #FFF;
+  font-weight: 700 !important;
 }
+
+/*-------------CENTERED HOST------------*/
+
+#begin-host{
+  position: absolute;
+}
+
+#lefthost{background-color: #fff; height:100%;}
+/*#imghost{position:relative;}
+#imghost img{position:absolute;z-index:1}
+#imghost img.active{z-index:3}*/
