@@ -220,11 +220,11 @@ bottom: 12px;
 margin: 0;
 }
 
-#submit {
+.submit {
 height: 2.4375rem;
 padding: 0.5rem;
 	border-color: #FF5A5F #FF5A5F #E00007;
-	background-color: #FF5A5F;
+	background-color: #FF5A5F !important;
 	color: #FFF;
   font-weight: 700 !important;
 }
