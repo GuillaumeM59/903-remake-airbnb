@@ -270,6 +270,7 @@ padding-left: 5px;padding-top: 25px; padding-right:5px; }
 #londres { background-image: url("../img/around/londres.jpeg");margin:5px;}
 #around #otheraround { color: #565A5C;background-color: white;font-weight: bold; border: 1px solid rgb(143, 143, 143); margin-top: 50px;margin-bottom: 50px;}
 #around #otheraround:hover {border: 1px solid black;}
+#around .columns { padding: 0 !important;}
 
 
 /*-------------FOOTER BLOCK---------------*/
