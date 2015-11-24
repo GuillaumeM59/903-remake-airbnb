@@ -199,7 +199,7 @@ video.fillWidth {
 select{margin-bottom: 0;}
 #search-home {
 	position: relative;
-	bottom: 80px;
+	bottom: -178px;
 	background-color: rgba(0, 0, 0, 0.5);
 	vertical-align: bottom;
 	margin-right: 0px;
@@ -296,3 +296,9 @@ footer p { color: rgb(116, 116, 116);}
 .selectfooter {
 	background-color: rgb(64, 64, 64);
 	color: white; }
+
+@media all and (max-width: 750px){
+	footer #societe ul li {
+		display: inline-block !important ;
+	}
+}
