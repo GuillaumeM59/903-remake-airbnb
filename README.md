@@ -11,5 +11,3 @@ Ce projet a pour base Foundation 6.0.1 (fraichement sorti): Remake Airbnb (5/7)
 1. [cheat-sheet EMMET](http://guillaumem59.github.io/007-cheat-sheet-emmet)
 1. [Portfolio binôme](http://simplon-roubaix.github.io/portfolio-caroetguillaume)
 1. **[remake Airbnb](http://guillaumem59.github.io/903-remake-airbnb)**
-1. [remake Google](http://guillaumem59.github.io/901-remake-google)
-1. [remake Leboncoin](http://guillaumem59.github.io/902-remake-leboncoin)
